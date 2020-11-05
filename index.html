@@ -10,29 +10,32 @@
       crossorigin="anonymous"
     />
         <link rel="stylesheet" href="src/styles.css" />
-
-
     <title>Vanilla Weather App</title>
   </head>
+  
   <body>
     <div class="container"></div>
     <div class="weather-app-wrap">
     <div class="weather-app">
+      <div class="overview">
       <h1>New York, NY, USA</h1>
       <ul>
         <li>Friday 01:47 PM</li>
         <li>Cloudy</li>
       </ul>
+      </div>
       <div class="row">
         <div class="col-6">
+          <div class="clearfix weather-temperature">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
             alt="cloudy"
+            class="float-left"
           />
-          <span class="temperature-current">12</span>
-          <span class="fahrenheit-temp">°F</span>
-          | 
-          <span class="celsius-temp">°C</span>
+          <div class="float-left"><strong>12</strong><span class="units">°C | <a href="#">°F</a></span>
+
+          </div>
+          </div>
         </div>
         <div class="col-6">
           <ul>
@@ -42,9 +45,6 @@
           </ul>
         </div>
       </div>
-    
-    
-  
     </div>
     
     <small>
@@ -53,6 +53,7 @@
         </a>
         by Sami Jones
     </small>
+    </div>
     </div>
 </div>
     <script src="src/app.js"></script>
